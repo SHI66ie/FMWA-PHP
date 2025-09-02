@@ -20,6 +20,16 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .maintenance-notice {
+            position: relative;
+            z-index: 1029;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .maintenance-notice i {
+            color: #e74c3c;
+        }
+    </style>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/general.css">
@@ -194,6 +204,17 @@
         </div>
     </nav>
 </header>
+
+    <!-- Maintenance Notice -->
+    <div class="maintenance-notice bg-warning text-dark py-2 text-center">
+        <div class="container">
+            <p class="mb-0 fw-bold">
+                <i class="fas fa-tools me-2"></i>
+                Site is under maintenance. Please bear with us.
+                <i class="fas fa-tools ms-2"></i>
+            </p>
+        </div>
+    </div>
 
     <!-- Welcome Section -->
     <section class="welcome-section bg-primary text-white py-2">
