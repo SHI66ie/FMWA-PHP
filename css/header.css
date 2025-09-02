@@ -107,14 +107,13 @@
     font-size: 12px;
 }
 
-.main-nav {
-    background-color: #014903;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.main-nav .navbar-brand img {
-    height: 60px;
+/* Main Navigation */
+.navbar {
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease;
+    background-color: #0d47a1 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 70px; /* Fixed height to prevent layout shift */
 }
 
 .main-nav .nav-link {
@@ -142,14 +141,27 @@
 /* Dropdown styles */
 .dropdown-menu {
     max-width: 280px;
-    min-width: 200px;
+    min-width: 220px;
     font-size: 0.9em;
     padding: 0.5rem 0;
     margin-top: 0.5rem;
     left: auto !important;
     right: 0;
-    /* Ensure dropdown doesn't close when clicking inside */
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
     pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    display: block !important;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    position: absolute;
+    transform: translate3d(0, 0, 0);
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown-item {
@@ -181,19 +193,21 @@
     vertical-align: middle;
 }
 
-/* Completely disable hover behavior for dropdowns */
-.dropdown-menu {
-    pointer-events: none;
-    opacity: 0;
-    display: block !important;
-    visibility: hidden;
-    transition: none !important;
+/* Dropdown menu items */
+.dropdown-item {
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.5rem 1.5rem;
+    line-height: 1.4;
+    color: #333;
+    transition: background-color 0.2s ease;
 }
 
-.dropdown-menu.show {
-    pointer-events: auto;
-    opacity: 1;
-    visibility: visible;
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f8f9fa;
+    color: #0d47a1;
+    text-decoration: none;
 }
 
 /* Prevent any hover effects on dropdown toggles */
@@ -357,29 +371,68 @@
     }
 }
 
-/* Welcome Section */
+/* Welcome Section - Consolidated Styles */
 .welcome-section {
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     color: #000000;
-    padding: 8px 0;
-    text-align: center;
-    margin: 0;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    z-index: 10;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
 }
 
-.welcome-section h1 {
-    font-size: 1.5rem;
-    margin-bottom: 4px !important;
+.welcome-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-.welcome-section p {
+.welcome-section .scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.25rem 0;
+}
+
+.welcome-section .scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 20s linear infinite;
     font-size: 0.9rem;
-    margin-bottom: 4px !important;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.3px;
 }
 
-.welcome-section .btn {
-    padding: 2px 12px;
-    font-size: 0.8rem;
-    margin-top: 4px;
+.welcome-section .scrolling-text i {
+    color: #e83e8c;
+    margin-right: 8px;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .welcome-section {
+        padding: 0.6rem 0;
+    }
+    
+    .welcome-section .scrolling-text {
+        font-size: 0.8rem;
+        white-space: normal;
+        animation: scrollTextMobile 15s linear infinite;
+    }
+    
+    @keyframes scrollTextMobile {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
 }

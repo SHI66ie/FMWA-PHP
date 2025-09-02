@@ -14,10 +14,11 @@ p {
     text-align: center;
     padding: 0.8rem 0;
     overflow: hidden;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
+    background-color: #0d47a1; /* Dark blue background */
+    color: white;
     width: 100%;
     z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes scrollText {
@@ -30,21 +31,39 @@ p {
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
-    animation: scrollText 20s linear infinite;
+    animation: scrollText 25s linear infinite;
     margin: 0;
     font-size: 0.9rem;
-    color: #2c3e50;
+    color: white;
     font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
 .scrolling-text i {
-    color: #e83e8c;
+    color: #f9ca24; /* Yellow color for icons */
     margin-right: 8px;
+}
+
+/* Ensure text doesn't wrap */
+.scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* Pause animation on hover */
+.welcome-section:hover .scrolling-text {
+    animation-play-state: paused;
 }
 
 @media (max-width: 991.98px) {
     .scrolling-text {
         font-size: 0.8rem;
+        animation-duration: 20s; /* Slightly faster on mobile */
+    }
+    
+    .welcome-section {
+        padding: 0.6rem 0;
     }
 }
 
