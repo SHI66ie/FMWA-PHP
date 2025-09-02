@@ -1,9 +1,21 @@
+/* Navigation Wrapper */
+.main-nav-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 1030;
+    background-color: #014903;
+}
+
 /* Navigation Bar Styles */
 .main-nav {
     min-height: 70px;
-    background-color: #0d47a1;
+    background-color: #014903 !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    z-index: 1030;
+    width: 100%;
+    margin: 0;
 }
 
 .navbar-brand {
@@ -12,6 +24,9 @@
     min-width: 300px;
     display: flex;
     align-items: center;
+    margin-right: 0;
+    padding-right: 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .fmwa-logo-stretch {
@@ -42,8 +57,13 @@
 }
 
 .nav-item {
-    margin: 0 0.25rem;
+    margin: 0;
     position: relative;
+    min-width: max-content;
+}
+
+.nav-item + .nav-item {
+    margin-left: 0.25rem;
 }
 
 .nav-link {
@@ -53,34 +73,41 @@
     text-transform: uppercase;
     font-size: 12px;
     white-space: nowrap;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
     position: relative;
     border-bottom: 2px solid transparent;
+    display: inline-block;
+    min-width: max-content;
+    margin: 0 2px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: #f9ca24 !important;
     border-bottom-color: #f9ca24;
+    text-decoration: none;
+    transform: none;
 }
 
 /* Dropdown Menus */
 .dropdown-menu {
     min-width: 220px;
     padding: 0.5rem 0;
-    margin-top: 0;
+    margin: 0;
     border: none;
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 0.25rem 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
     display: block !important;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    transition: opacity 0.15s ease, visibility 0.15s ease;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1000;
     background-color: #fff;
+    transform: none !important;
+    will-change: opacity, visibility;
 }
 
 .dropdown-menu.show {
@@ -142,10 +169,20 @@
 /* Responsive Adjustments */
 @media (max-width: 991.98px) {
     .navbar-collapse {
-        background-color: #0d47a1;
+        background-color: #014903;
         padding: 1rem;
-        margin-top: 0.5rem;
-        border-radius: 0.25rem;
+        margin: 0 -1rem -0.5rem;
+        border-radius: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1020;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-item {
+        margin: 0.25rem 0 !important;
     }
     
     .nav-item {
