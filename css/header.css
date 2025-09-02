@@ -224,18 +224,26 @@
     justify-content: flex-end;
 }
 
-.nav-item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+.main-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 12px 8px !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    white-space: nowrap;
+    position: relative;
 }
 
-/* Departments dropdown specific adjustments */
-#departmentsDropdown.dropdown-toggle::after {
-    margin-left: 0.25em;
+.main-nav .nav-link:hover {
+    color: #f9ca24 !important;
 }
 
-/* Ensure dropdowns stay within viewport */
-.dropdown:not(.dropstart) .dropdown-menu {
+/* Remove bottom border from active menu item */
+.main-nav .nav-item .nav-link.active,
+.main-nav .nav-item .nav-link:focus,
+.main-nav .nav-item .nav-link:active {
+    border-bottom: none !important;
+    box-shadow: none !important;
     left: auto !important;
     right: 0;
     margin-right: 30px !important; /* Increased right margin */
