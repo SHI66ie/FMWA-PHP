@@ -378,7 +378,10 @@
             <div class="row">
                 <div class="col-lg-8">
                     <h2 class="section-title">Latest News & Updates</h2>
-                    <div class="news-grid">
+                    <div class="news-slider-wrapper position-relative">
+                        <button class="news-prev btn btn-link position-absolute top-50 start-0 translate-middle-y" aria-label="Previous News"><i class="fas fa-chevron-left fa-lg"></i></button>
+                        <button class="news-next btn btn-link position-absolute top-50 end-0 translate-middle-y" aria-label="Next News"><i class="fas fa-chevron-right fa-lg"></i></button>
+                        <div class="news-grid">
                         <!-- ACTU Committee Inauguration -->
                         <div class="col-md-6 mb-4">
                             <div class="news-item">
@@ -405,24 +408,6 @@
                                 <span class="news-date"><i class="far fa-calendar-alt me-2"></i>July 10, 2025</span>
                                 <h4 class="news-title">Government Approves New Public Service Reform Initiative</h4>
                                 <p>The government has approved a comprehensive reform package aimed at enhancing efficiency in the public service.</p>
-                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="news-item">
-                                <img src="/images/news3.jpg" alt="News 3" class="img-fluid">
-                                <span class="news-date"><i class="far fa-calendar-alt me-2"></i>June 28, 2025</span>
-                                <h4 class="news-title">Public Servants to Undergo Capacity Building</h4>
-                                <p>A new capacity building initiative has been introduced to enhance the skills of public servants across all levels.</p>
-                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="news-item">
-                                <img src="/images/news4.jpg" alt="News 4" class="img-fluid">
-                                <span class="news-date"><i class="far fa-calendar-alt me-2"></i>June 15, 2025</span>
-                                <h4 class="news-title">Government Partners with Private Sector on Training</h4>
-                                <p>New partnership announced to provide specialized training for public servants in collaboration with leading private sector organizations.</p>
                                 <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -590,6 +575,15 @@
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // News slider buttons
+        const newsGrid = document.querySelector('.news-grid');
+        document.querySelector('.news-prev').addEventListener('click', ()=>{
+            newsGrid.scrollBy({left:-320, behavior:'smooth'});
+        });
+        document.querySelector('.news-next').addEventListener('click', ()=>{
+            newsGrid.scrollBy({left:320, behavior:'smooth'});
         });
 
         // Initialize Bootstrap tooltips
