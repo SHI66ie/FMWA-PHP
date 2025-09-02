@@ -90,14 +90,16 @@
 /* News grid layout */
 .news-grid {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     padding-bottom: 1rem;
+    margin: 0 -15px;
 }
 
 .news-grid .col-md-6 {
-    width: 100%;
-    padding: 0;
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 0 15px;
 }
 
 
@@ -108,7 +110,7 @@
     }
     
     .news-grid .col-md-6 {
-        width: 100%;
+        width: 85%;
     }
     
     .news-item img {
