@@ -13,10 +13,11 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Reset all margins and padding for the navbar */
-body {
-    margin: 0;
-    padding: 0;
+/* Reset all margins and padding */
+body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
 }
 
 /* Make navbar fixed at the very top */
@@ -34,6 +35,7 @@ body {
     display: flex !important;
     align-items: center !important;
     border: none !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* Add padding to body to account for fixed navbar */
@@ -41,6 +43,12 @@ body {
     padding-top: 70px !important; /* Height of navbar */
     margin: 0 !important;
     position: relative !important;
+    background: #f8f9fa;
+}
+
+/* Ensure welcome section is right below header */
+.welcome-section {
+    margin-top: 0 !important;
 }
 
 /* Ensure no other elements interfere with the header */
