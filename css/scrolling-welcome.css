@@ -2,11 +2,13 @@
 .scrolling-welcome {
     background-color: transparent;
     color: #0d6efd; /* Blue text color */
-    padding: 15px 0;
+    padding: 10px 0 5px 0;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin: 20px 0;
+    margin: 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .scrolling-welcome-content {
