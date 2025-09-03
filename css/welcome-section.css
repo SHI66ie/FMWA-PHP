@@ -1,14 +1,16 @@
-/* Welcome Section Styling */
+/* Welcome Section Styling - High Priority */
 .welcome-section {
-    background-color: #f8f9fa;
-    padding: 0.3rem 0; /* Minimal padding */
-    border-top: 1px solid #e9ecef;
-    border-bottom: 1px solid #e9ecef;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    margin-top: -1px; /* Pull up to touch the header */
-    position: relative;
-    z-index: 1000; /* Ensure it stays below the header */
+    background-color: #f8f9fa !important;
+    padding: 0.3rem 0 !important;
+    margin: -1px 0 0 0 !important; /* Pull up to touch the header */
+    border-top: 1px solid #e9ecef !important;
+    border-bottom: 1px solid #e9ecef !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    overflow: hidden !important;
+    position: relative !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 .welcome-section .scrolling-text-container {
