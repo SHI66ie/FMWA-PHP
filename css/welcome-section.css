@@ -1,10 +1,11 @@
 /* Welcome Section Styling */
 .welcome-section {
     background-color: #f8f9fa;
-    padding: 0.8rem 0;
+    padding: 0.4rem 0; /* Reduced padding */
     border-bottom: 1px solid #e9ecef;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
+    margin-top: -0.5rem; /* Pull the section up slightly */
 }
 
 .welcome-section .scrolling-text-container {
@@ -18,9 +19,10 @@
     padding-left: 100%;
     animation: scrollText 60s linear infinite;
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.88rem; /* Slightly smaller font */
     color: #2c3e50;
     font-weight: 500;
+    line-height: 1.2; /* Tighter line height */
 }
 
 .welcome-section .scrolling-text i {
