@@ -1,20 +1,23 @@
-/* Welcome Section Styling - Slim bar below header */
+/* Welcome Section Styling - Fixed position below header */
 .welcome-section {
-    background-color: #0a4b0a !important;
-    color: white !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    border: none !important;
-    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    overflow: hidden !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    position: relative;
-    z-index: 99;
+    position: fixed;
+    top: 70px; /* Height of navbar */
+    left: 0;
+    right: 0;
+    z-index: 98;
+    background-color: #0a4b0a;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 0.9rem;
     font-weight: 500;
-    height: 30px; /* Fixed height for slim appearance */
+    height: 30px;
     display: flex;
     align-items: center;
 }
@@ -27,7 +30,7 @@
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    background-color: #0a4b0a;
+    background-color: transparent;
     height: 100%;
     display: flex;
     align-items: center;
