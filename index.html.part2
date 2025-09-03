@@ -1,0 +1,23 @@
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Carousel Initialization -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize carousel with autoplay
+        var myCarousel = new bootstrap.Carousel(document.getElementById('heroCarousel'), {
+            interval: 5000, // Change slide every 5 seconds
+            wrap: true,
+            touch: true
+        });
+        
+        // Pause autoplay when hovering over the carousel
+        var carouselElement = document.getElementById('heroCarousel');
+        carouselElement.addEventListener('mouseenter', function() {
+            myCarousel.pause();
+        });
+        carouselElement.addEventListener('mouseleave', function() {
+            myCarousel.cycle();
+        });
+    });
+    </script>
