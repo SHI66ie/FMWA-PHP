@@ -20,10 +20,10 @@ body, html {
     overflow-x: hidden;
 }
 
-/* Make navbar fixed at the very top */
+/* Make navbar fixed below welcome section */
 .main-nav {
     position: fixed !important;
-    top: 0 !important;
+    top: 30px !important; /* Height of welcome section */
     left: 0 !important;
     right: 0 !important;
     z-index: 1050 !important;
@@ -38,7 +38,16 @@ body, html {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Add padding to body to account for fixed navbar and welcome section */
+/* Header wrapper to contain both nav and welcome section */
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+}
+
+/* Add padding to body to account for fixed header and welcome section */
 body {
     padding-top: 100px !important; /* Height of navbar (70px) + welcome section (30px) */
     margin: 0 !important;
