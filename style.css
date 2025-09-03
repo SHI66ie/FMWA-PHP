@@ -11,6 +11,18 @@ body {
     min-height: 100vh;
 }
 
+/* Header Styles */
+.navbar.main-nav {
+    background-color: #014903 !important;
+    background: #014903 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.navbar-brand .fmwa-navbar-title {
+    color: #014903 !important;
+}
+
 /* Main Content Wrapper */
 .main-content {
     flex: 1 0 auto;
