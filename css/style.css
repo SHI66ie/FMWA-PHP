@@ -13,6 +13,11 @@ p {
     position: relative;
     text-align: center;
     padding: 0.8rem 0;
+    background-color: #0a4b0a !important; /* Dark green background */
+    color: white !important;
+    z-index: 1000;
+    margin-top: 40px; /* Space for fixed header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
     background-color: #0d47a1; /* Dark blue background */
     color: white;
@@ -54,6 +59,43 @@ p {
 /* Pause animation on hover */
 .welcome-section:hover .scrolling-text {
     animation-play-state: paused;
+}
+
+/* Scrolling text styles */
+.welcome-section .scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.welcome-section .scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
+    font-weight: 500;
+}
+
+.welcome-section .scrolling-text i {
+    color: #ffc107; /* Yellow icons for better visibility */
+    margin: 0 10px;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .welcome-section {
+        padding: 0.6rem 0;
+        margin-top: 60px; /* More space on mobile */
+    }
+    
+    .welcome-section .scrolling-text {
+        font-size: 0.9rem;
+        white-space: normal;
+    }
 }
 
 @media (max-width: 991.98px) {
