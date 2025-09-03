@@ -1,5 +1,59 @@
 /* Header and Navigation Styles */
 
+/* Welcome Marquee Section */
+.welcome-marquee {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 12px 0;
+    overflow: hidden;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scrolling-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 25s linear infinite;
+}
+
+.scrolling-text i {
+    color: #f9ca24;
+    margin: 0 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.welcome-marquee:hover .scrolling-text {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-marquee {
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+    
+    .scrolling-text i {
+        margin: 0 5px;
+    }
+}
+
 /* Welcome Section with Scrolling Text */
 .welcome-section {
     background-color: rgba(0, 0, 0, 0.7);
