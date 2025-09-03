@@ -137,7 +137,54 @@
     </div>
     
     <!-- Header -->
-    <?php include 'partials/header.html'; ?>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-dark main-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center me-0" href="index.html">
+                    <img src="/images/logo-removebg-preview.png" alt="Federal Ministry of Women Affairs Logo" class="fmwa-logo-stretch" width="60" height="60">
+                    <span class="logo-divider"></span>
+                    <span class="fmwa-navbar-title">FEDERAL MINISTRY OF WOMEN AFFAIRS</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about.html">About Ministry</a></li>
+                                <li><a class="dropdown-item" href="mandate.html">Mandate</a></li>
+                                <li><a class="dropdown-item" href="organogram.html">Organogram</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Departments
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                                <li><a class="dropdown-item" href="departments/child-development.html">Child Development</a></li>
+                                <li><a class="dropdown-item" href="departments/community-development-social-intervention.html">Community Development & Social Intervention</a></li>
+                                <li><a class="dropdown-item" href="departments/finance-accounting.html">Finance & Accounting</a></li>
+                                <li><a class="dropdown-item" href="departments/gender-affairs.html">Gender Affairs</a></li>
+                                <li><a class="dropdown-item" href="womendevelopment.html">Women Development</a></li>
+                                <li><a class="dropdown-item" href="departments/nutrition.html">Nutrition</a></li>
+                                <li><a class="dropdown-item" href="departments/general-services.html">General Services</a></li>
+                                <li><a class="dropdown-item" href="departments/planning-research-statistics.html">Planning, Research & Statistics</a></li>
+                                <li><a class="dropdown-item" href="departments/procurement.html">Procurement</a></li>
+                                <li><a class="dropdown-item" href="departments/reform-coordination-service-improvement.html">Reform Coordination & Service Improvement</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Body padding is handled in notice.css -->
 
