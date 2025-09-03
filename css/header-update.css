@@ -38,12 +38,14 @@
 }
 
 /* Navigation Styling */
-.main-nav {
-    background-color: #014903;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-    border: none;
+.main-nav,
+nav.navbar.navbar-expand-lg.navbar-dark.main-nav,
+nav.navbar {
+    background-color: #014903 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
 }
 
 .navbar-nav {
