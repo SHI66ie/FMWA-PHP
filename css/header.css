@@ -1,5 +1,38 @@
 /* Header and Navigation Styles */
 
+/* Make maintenance notice fixed at the very top */
+.maintenance-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040; /* Higher than navbar */
+    width: 100%;
+    background-color: #ffc107;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Make navbar fixed below maintenance notice */
+.main-nav {
+    position: fixed;
+    top: 32px; /* Height of maintenance notice */
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+    background-color: #014903;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add padding to body to account for fixed elements */
+body {
+    padding-top: 100px; /* Height of navbar + maintenance notice */
+}
+
 /* Page Header Styles */
 .page-header {
     padding: 2rem 0;
