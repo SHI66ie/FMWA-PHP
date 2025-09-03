@@ -11,9 +11,12 @@
     background-color: #ffc107;
     color: #000;
     text-align: center;
-    padding: 5px 0;
+    padding: 8px 0;
     font-size: 0.9rem;
     font-weight: 500;
+    height: 30px; /* Fixed height for consistent spacing */
+    line-height: 1.2;
+    box-sizing: border-box;
 }
 
 /* Make navbar fixed below maintenance notice */
@@ -26,11 +29,16 @@
     width: 100%;
     background-color: #014903;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0;
+    min-height: 70px; /* Ensure consistent height */
+    display: flex;
+    align-items: center;
 }
 
 /* Add padding to body to account for fixed elements */
 body {
-    padding-top: 100px; /* Height of navbar + maintenance notice */
+    padding-top: 100px; /* Height of navbar (70px) + maintenance notice (30px) */
+    margin: 0;
 }
 
 /* Page Header Styles */
