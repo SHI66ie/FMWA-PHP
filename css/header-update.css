@@ -4,10 +4,48 @@
 .top-bar {
     background-color: #014903; /* Green color */
     color: white;
-    padding: 5px 0;
+    padding: 8px 0;
     font-size: 0.85rem;
     border-bottom: none;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.top-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.top-bar-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-bar-text i {
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    font-size: 1.1em;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    text-decoration: none;
 }
 
 /* Logo and Title Styling */
