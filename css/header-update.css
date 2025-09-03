@@ -1,13 +1,13 @@
 /* Header Update to match reference design */
 
-/* Top Bar Styling */
+/* Top Bar Styling - Hidden */
 .top-bar {
-    background-color: #014903; /* Green color */
-    color: black;
-    padding: 5px 0;
-    font-size: 0.85rem;
-    border-bottom: none;
-    margin: 0;
+    display: none; /* Hide the top bar completely */
+    visibility: hidden; /* Ensure it's not accessible to screen readers */
+    height: 0; /* Remove any height */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    overflow: hidden; /* Hide any content that might overflow */
 }
 
 /* Logo and Title Styling */
