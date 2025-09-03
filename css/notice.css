@@ -1,6 +1,16 @@
-/* Maintenance Notice - Now part of scrolling text */
+/* Maintenance Notice */
 .maintenance-notice {
-    display: none; /* Hide as we're now using the notice in the scrolling text */
+    background-color: #ffc107;
+    color: #000;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1040;
 }
 
 .maintenance-notice i {

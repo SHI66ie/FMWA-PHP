@@ -13,20 +13,19 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Reset all margins and padding */
-body, html {
+/* Reset all margins and padding for the navbar */
+html, body {
     margin: 0 !important;
     padding: 0 !important;
-    overflow-x: hidden;
 }
 
-/* Make navbar fixed below welcome section */
+/* Make navbar fixed at the very top */
 .main-nav {
     position: fixed !important;
-    top: 30px !important; /* Height of welcome section */
+    top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    z-index: 1050 !important;
+    z-index: 1060 !important;
     width: 100% !important;
     background-color: #014903 !important;
     margin: 0 !important;
@@ -35,35 +34,13 @@ body, html {
     display: flex !important;
     align-items: center !important;
     border: none !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Header wrapper to contain both nav and welcome section */
-.header-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1050;
-}
-
-/* Add padding to body to account for fixed header and welcome section */
+/* Add padding to body to account for fixed navbar and notice */
 body {
-    padding-top: 100px !important; /* Height of navbar (70px) + welcome section (30px) */
+    padding-top: 108px !important; /* Height of navbar (70px) + notice (38px) */
     margin: 0 !important;
     position: relative !important;
-    background: #f8f9fa;
-    min-height: 100vh;
-}
-
-/* Ensure welcome section is fixed below header */
-.welcome-section {
-    position: fixed;
-    top: 70px; /* Height of navbar */
-    left: 0;
-    right: 0;
-    z-index: 98; /* Just below header */
-    margin: 0 !important;
 }
 
 /* Ensure no other elements interfere with the header */
