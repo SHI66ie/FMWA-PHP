@@ -35,6 +35,12 @@ body {
     margin: 0;
 }
 
+/* Ensure welcome section appears below navbar */
+.welcome-section {
+    margin-top: 0;
+    padding: 0;
+}
+
 /* Welcome section with notice */
 .welcome-section {
     padding-top: 0;

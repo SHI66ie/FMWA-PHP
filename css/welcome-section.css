@@ -1,7 +1,7 @@
 /* Welcome Section Styling - High Priority */
 .welcome-section {
     background-color: #f8f9fa !important;
-    padding: 0 !important;
+    padding: 10px 0 !important;
     margin: 0 !important;
     border-top: 1px solid #e9ecef !important;
     border-bottom: 1px solid #e9ecef !important;
@@ -13,26 +13,15 @@
     z-index: 100 !important;
 }
 
-/* Maintenance notice styling */
-.welcome-section .maintenance-notice {
-    background-color: #ffc107;
-    color: #000;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 0;
-    width: 100%;
-    display: block;
-}
-
-.welcome-section .maintenance-notice i {
-    margin-right: 8px;
-}
-
-.welcome-section .notice-alert {
-    font-weight: bold;
+/* Style notice within scrolling text */
+.scrolling-text .fa-tools {
+    color: #ffc107 !important;
     margin-right: 5px;
+}
+
+.scrolling-text .notice-alert {
+    color: #d63384;
+    font-weight: bold;
 }
 
 /* Ensure header has no bottom margin */
