@@ -2,7 +2,7 @@
 
 /* Header Styles */
 .main-nav {
-    background-color: #0a4b1e !important; /* Dark green background */
+    background-color: #014903 !important; /* Dark green background */
     padding: 8px 0 !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
@@ -51,7 +51,7 @@
 }
 
 .main-nav .nav-link:hover {
-    color: #ffd700 !important; /* Gold color on hover */
+    color: #f9ca24 !important; /* Yellow color on hover */
     background-color: transparent !important;
 }
 
