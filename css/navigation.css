@@ -43,7 +43,7 @@
 }
 
 .navbar-brand .fmwa-navbar-title {
-    color: #f9ca24 !important; /* Matching footer accent color */
+    color: #ffffff !important; /* Changed to white to match reference site */
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
