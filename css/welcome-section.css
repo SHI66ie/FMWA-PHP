@@ -1,43 +1,50 @@
-/* Welcome Section Styling - Directly below header */
+/* Welcome Section Styling - Slim bar below header */
 .welcome-section {
     background-color: #0a4b0a !important;
     color: white !important;
     padding: 0 !important;
     margin: 0 !important;
     border: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     overflow: hidden !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    line-height: 1.5;
     position: relative;
     z-index: 99;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    height: 30px; /* Fixed height for slim appearance */
+    display: flex;
+    align-items: center;
 }
 
 /* Scrolling text container */
 .scrolling-text-container {
-    padding: 10px 0;
+    padding: 0 15px;
     margin: 0;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     background-color: #0a4b0a;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 /* Scrolling text animation */
 .scrolling-text {
     display: inline-block;
     padding-left: 100%;
-    animation: scrollText 40s linear infinite;
+    animation: scrollText 30s linear infinite;
     white-space: nowrap;
     margin: 0;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    line-height: 1;
 }
 
 /* Style notice within scrolling text */

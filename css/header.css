@@ -38,17 +38,22 @@ body, html {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Add padding to body to account for fixed navbar */
+/* Add padding to body to account for fixed navbar and welcome section */
 body {
-    padding-top: 70px !important; /* Height of navbar */
+    padding-top: 100px !important; /* Height of navbar (70px) + welcome section (30px) */
     margin: 0 !important;
     position: relative !important;
     background: #f8f9fa;
 }
 
-/* Ensure welcome section is right below header */
+/* Ensure welcome section is fixed below header */
 .welcome-section {
-    margin-top: 0 !important;
+    position: fixed;
+    top: 70px; /* Height of navbar */
+    left: 0;
+    right: 0;
+    z-index: 98; /* Just below header */
+    margin: 0 !important;
 }
 
 /* Ensure no other elements interfere with the header */
