@@ -12,18 +12,14 @@ p {
 .welcome-section {
     position: relative;
     text-align: center;
-    padding: 0.8rem 0;
-    background-color: #0a4b0a !important; /* Dark green background */
-    color: white !important;
-    z-index: 1000;
-    margin-top: 40px; /* Space for fixed header */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden;
-    background-color: #0d47a1; /* Dark blue background */
+    padding: 10px 0;
+    background-color: #0a4b0a; /* Dark green background */
     color: white;
     width: 100%;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 @keyframes scrollText {
@@ -93,13 +89,6 @@ p {
     }
     
     .welcome-section .scrolling-text {
-        font-size: 0.9rem;
-        white-space: normal;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .scrolling-text {
         font-size: 0.8rem;
         animation-duration: 20s; /* Slightly faster on mobile */
     }
