@@ -4,11 +4,14 @@
 .welcome-marquee {
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
-    padding: 12px 0;
+    padding: 15px 0;
+    margin: 70px 0 0; /* Increased top margin to push it below the header */
     overflow: hidden;
     font-size: 0.95rem;
     font-weight: 500;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 .scrolling-wrapper {
