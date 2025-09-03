@@ -1,0 +1,90 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content Wrapper */
+.main-content {
+    flex: 1 0 auto;
+    width: 100%;
+    padding-top: 80px; /* Space for fixed header */
+}
+
+/* Container adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Links */
+a {
+    color: #1a237e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+/* For organogram.html, add spacing only to the main content */
+.page-content {
+    padding: 40px 0 40px 0;
+}
+
+/* Ensure navbar and footer are flush with edges */
+.navbar.main-nav,
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer-widget h4, .footer-widget h5 {
+    color: #fff;
+}
+h1, h2 {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.org-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.org-table th, .org-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.org-table th {
+    background: #f5f5f5;
+}
+.org-header {
+    font-weight: bold;
+    background: #e8e8e8;
+}
+.org-centered-title {
+    text-align: center;
+    font-weight: bold;
+}
