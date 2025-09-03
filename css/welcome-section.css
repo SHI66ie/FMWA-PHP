@@ -1,11 +1,14 @@
 /* Welcome Section Styling */
 .welcome-section {
     background-color: #f8f9fa;
-    padding: 0.4rem 0; /* Reduced padding */
+    padding: 0.3rem 0; /* Minimal padding */
+    border-top: 1px solid #e9ecef;
     border-bottom: 1px solid #e9ecef;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
-    margin-top: -0.5rem; /* Pull the section up slightly */
+    margin-top: -1px; /* Pull up to touch the header */
+    position: relative;
+    z-index: 1000; /* Ensure it stays below the header */
 }
 
 .welcome-section .scrolling-text-container {
