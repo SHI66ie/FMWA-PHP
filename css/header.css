@@ -13,7 +13,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Make navbar fixed at top */
+/* Make navbar fixed at the very top */
 .main-nav {
     position: fixed;
     top: 0;
@@ -27,12 +27,20 @@
     min-height: 70px; /* Ensure consistent height */
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 /* Add padding to body to account for fixed navbar */
 body {
     padding-top: 70px; /* Height of navbar */
     margin: 0;
+    position: relative;
+}
+
+/* Ensure content starts below the fixed navbar */
+body > *:not(.main-nav) {
+    position: relative;
+    z-index: 1;
 }
 
 /* Ensure welcome section appears below navbar */
