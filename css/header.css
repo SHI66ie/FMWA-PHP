@@ -1,28 +1,22 @@
 /* Header and Navigation Styles */
 
-/* Make maintenance notice fixed at the very top */
-.maintenance-notice {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1060; /* Highest z-index to ensure it's on top */
+/* Maintenance notice in welcome section */
+.welcome-section .maintenance-notice {
     width: 100%;
     background-color: #ffc107;
     color: #000;
     text-align: center;
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 0.9rem;
     font-weight: 500;
-    height: 30px; /* Fixed height for consistent spacing */
-    line-height: 1.2;
-    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Make navbar fixed below maintenance notice */
+/* Make navbar fixed at top */
 .main-nav {
     position: fixed;
-    top: 30px; /* Height of maintenance notice */
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1050;
@@ -35,10 +29,16 @@
     align-items: center;
 }
 
-/* Add padding to body to account for fixed elements */
+/* Add padding to body to account for fixed navbar */
 body {
-    padding-top: 100px; /* Height of navbar (70px) + maintenance notice (30px) */
+    padding-top: 70px; /* Height of navbar */
     margin: 0;
+}
+
+/* Welcome section with notice */
+.welcome-section {
+    padding-top: 0;
+    margin-top: 0;
 }
 
 /* Page Header Styles */
